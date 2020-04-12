@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Regression TestSuite]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="FireFox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="74.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="url" value="https://learn.letskodeit.com/p/practice"/>
+    <classes>
+      <class name="Section38.Test1Login">
+        <methods>
+          <include name="test1_validLoginTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Section38.Test1Login -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+</suite> <!-- Failed suite [Regression TestSuite] -->
