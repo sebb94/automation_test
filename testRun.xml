@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Cars Search" parallel="tests" thread-count="5">
+<test name="Chrome Test" enabled="true">
+    <classes>
+        <class name="test_olx.TestDemo"></class>
+    </classes>
+</test>
+</suite> 
