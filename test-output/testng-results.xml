@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-13T18:00:48Z" name="Regression Cars Search" finished-at="2020-04-13T18:01:32Z" duration-ms="44234">
+  <suite started-at="2020-04-13T18:25:57Z" name="Regression Cars Search" finished-at="2020-04-13T18:26:51Z" duration-ms="54618">
     <groups>
     </groups>
-    <test started-at="2020-04-13T18:00:48Z" name="Audi test" finished-at="2020-04-13T18:01:29Z" duration-ms="40775">
+    <test started-at="2020-04-13T18:25:57Z" name="Audi test" finished-at="2020-04-13T18:26:44Z" duration-ms="47162">
       <class name="test_olx.TestDemo">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:00:48Z" name="beforeClass" finished-at="2020-04-13T20:01:06Z" duration-ms="18608" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:25:57Z" name="beforeClass" finished-at="2020-04-13T20:26:17Z" duration-ms="20911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:01:06Z" name="test1" finished-at="2020-04-13T20:01:27Z" duration-ms="21016" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:26:17Z" name="test1" finished-at="2020-04-13T20:26:42Z" duration-ms="24660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,19 +37,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:01:27Z" name="afterClass" finished-at="2020-04-13T20:01:29Z" duration-ms="1137" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@4387b79e]" started-at="2020-04-13T20:26:42Z" name="afterClass" finished-at="2020-04-13T20:26:44Z" duration-ms="1565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- test_olx.TestDemo -->
     </test> <!-- Audi test -->
-    <test started-at="2020-04-13T18:00:48Z" name="BMW Test" finished-at="2020-04-13T18:01:32Z" duration-ms="44223">
+    <test started-at="2020-04-13T18:25:57Z" name="BMW Test" finished-at="2020-04-13T18:26:48Z" duration-ms="51287">
       <class name="test_olx.TestDemo">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:00:48Z" name="beforeClass" finished-at="2020-04-13T20:01:07Z" duration-ms="18983" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:25:57Z" name="beforeClass" finished-at="2020-04-13T20:26:18Z" duration-ms="21471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:01:07Z" name="test1" finished-at="2020-04-13T20:01:31Z" duration-ms="24209" status="PASS">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:26:18Z" name="test1" finished-at="2020-04-13T20:26:47Z" duration-ms="28922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,19 +75,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:01:31Z" name="afterClass" finished-at="2020-04-13T20:01:32Z" duration-ms="1018" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@657c8ad9]" started-at="2020-04-13T20:26:47Z" name="afterClass" finished-at="2020-04-13T20:26:48Z" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- test_olx.TestDemo -->
     </test> <!-- BMW Test -->
-    <test started-at="2020-04-13T18:00:48Z" name="Fiat test" finished-at="2020-04-13T18:01:32Z" duration-ms="44234">
+    <test started-at="2020-04-13T18:25:57Z" name="Fiat test" finished-at="2020-04-13T18:26:51Z" duration-ms="54618">
       <class name="test_olx.TestDemo">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:00:48Z" name="beforeClass" finished-at="2020-04-13T20:01:06Z" duration-ms="18471" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:25:57Z" name="beforeClass" finished-at="2020-04-13T20:26:18Z" duration-ms="21814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:01:06Z" name="test1" finished-at="2020-04-13T20:01:31Z" duration-ms="24610" status="FAIL">
+        <test-method signature="test1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:26:18Z" name="test1" finished-at="2020-04-13T20:26:50Z" duration-ms="32006" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:01:31Z" name="afterClass" finished-at="2020-04-13T20:01:32Z" duration-ms="1131" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test_olx.TestDemo@add0edd]" started-at="2020-04-13T20:26:50Z" name="afterClass" finished-at="2020-04-13T20:26:51Z" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
