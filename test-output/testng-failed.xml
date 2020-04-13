@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Regression Cars Search]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Fiat test(failed)">
+    <parameter name="carBrand" value="Fjat"/>
+    <parameter name="city" value="Warszawa"/>
+    <parameter name="testName" value="Fiat test"/>
+    <parameter name="carModel" value="Bravo"/>
+    <classes>
+      <class name="test_olx.TestDemo">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test_olx.TestDemo -->
+    </classes>
+  </test> <!-- Fiat test(failed) -->
+</suite> <!-- Failed suite [Regression Cars Search] -->

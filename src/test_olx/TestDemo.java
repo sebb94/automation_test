@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 
 public class TestDemo {
 	
@@ -32,33 +33,35 @@ public class TestDemo {
   @BeforeClass
   public void beforeClass() {
 	  	report = ExtentFactory.getInstance();
-	  	LocalDateTime now = LocalDateTime.now();  
-	  	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy -  HH:mm:ss"); 
 	    baseURL = "https://olx.pl";	
 	    driver = new ChromeDriver();	 
-	    test = report.startTest("Verify cars search " + dtf.format(now));
-	    search = new Search(driver, test);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(baseURL);
   }
   
   @Test
-  public void test1() throws Exception { 
+  @Parameters({"testName", "city","carBrand","carModel" })
+  public void test1(String testName, String city, String carBrand, String carModel) throws Exception { 
+	  LocalDateTime now = LocalDateTime.now();  
+	  DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy -  HH:mm:ss"); 
+	  test = report.startTest("Verify cars search " + testName + " " + dtf.format(now));
+	  search = new Search(driver, test);
 	  search.acceptCookies();
 	  search.goToCarsSearch();
-	  search.cityFill("Kraków");
-	  search.carBrand("BMW");
-	  search.carModel("Seria 33");
+	  search.cityFill(city);
+	  search.carBrand(carBrand);
+	  search.carModel(carModel);
 	  search.info();
+	  report.endTest(test);
+	  report.flush();
 	 
   }
 
   @AfterClass
   public void afterClass() {
 	 driver.quit();
-	 report.endTest(test);
-	 report.flush();
+
 	  
   }
 

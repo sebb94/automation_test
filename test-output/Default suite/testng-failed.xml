@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="carBrand" value="param-val-not-found"/>
+  <parameter name="city" value="param-val-not-found"/>
+  <parameter name="testName" value="param-val-not-found"/>
+  <parameter name="carModel" value="param-val-not-found"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="test_olx.TestDemo">
+        <methods>
+          <include name="test1"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- test_olx.TestDemo -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

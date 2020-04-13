@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Regression Cars Search" parallel="tests" thread-count="5">
-<test name="Chrome Test" enabled="true">
+<suite name="Regression Cars Search" parallel="tests">
+<test name="BMW Test" enabled="true">
+	<parameter name="testName" value="BMW Test"></parameter>
+	<parameter name="city" value="Warszawa"></parameter>
+	<parameter name="carBrand" value="BMW"></parameter>
+	<parameter name="carModel" value="Seria 3"></parameter>
+    <classes>
+        <class name="test_olx.TestDemo"></class>
+    </classes>
+</test>
+<test name="Audi test" enabled="true">
+	<parameter name="testName" value="Audi test"></parameter>
+	<parameter name="city" value="Warszawa"></parameter>
+	<parameter name="carBrand" value="Audi"></parameter>
+	<parameter name="carModel" value="80"></parameter>
+    <classes>
+        <class name="test_olx.TestDemo"></class>
+    </classes>
+</test>
+<test name="Fiat test" enabled="true">
+	<parameter name="testName" value="Fiat test"></parameter>
+	<parameter name="city" value="Warszawa"></parameter>
+	<parameter name="carBrand" value="Fjat"></parameter>
+	<parameter name="carModel" value="Bravo"></parameter>
     <classes>
         <class name="test_olx.TestDemo"></class>
     </classes>
