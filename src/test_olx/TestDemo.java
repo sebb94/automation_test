@@ -1,10 +1,10 @@
 package test_olx;
 
 import org.testng.annotations.Test;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import org.testng.annotations.BeforeClass;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,12 +18,18 @@ public class TestDemo {
 	
    WebDriver driver;
    String baseURL;
+   Search search;
+   ExtentReports report;
+   ExtentTest test;
+
 
   @BeforeClass
   public void beforeClass() {
 	    baseURL = "https://olx.pl";	
-	    driver = new ChromeDriver();
-	    
+	    driver = new ChromeDriver(); 
+	    report = ExtentFactory.getInstance();
+	    test = report.startTest("Verify cars search");
+	    search = new Search(driver, test);
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(baseURL);
@@ -31,24 +37,18 @@ public class TestDemo {
   
   @Test
   public void test1() throws Exception {
-	  System.out.println("TEST");
-	  WebDriverWait wait = new WebDriverWait(driver, 3);
-	  driver.findElement(By.xpath("//div[@class='maincategories']//span[text()=\"Motoryzacja\"]")).click();
-	  Thread.sleep(500);
-	  driver.findElement(By.xpath("//span[@class='link category-name']//span[text()=\"Samochody osobowe\"]")).click();
-	  Thread.sleep(500);
+	  search.goToCarsSearch();
+	  search.carBrand("BMW");
+	  search.carModel("Seria 33");
 	  
-	  WebElement carBrand = driver.findElement(By.xpath("//span[text()=\"Marka\"]"));
-	  carBrand.click();
-	  WebElement carBrandValue =  wait.until
-			  	(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-code='bmw']")));
-	  carBrandValue.click();
-	  
+	 
   }
 
   @AfterClass
   public void afterClass() {
-	 //driver.quit();
+	 driver.quit();
+	 report.endTest(test);
+	 report.flush();
 	  
   }
 
